@@ -1,3 +1,12 @@
+
+.homeItem{
+	background-color: #a6e185;
+}
+
+.homeItemAlt{
+	background-color: #96e1e5;
+}
+
 /* Overriding material styles */
 
 	/* Progress Bar */
@@ -9,3 +18,4 @@
 	md-progress-linear .md-container .md-bar{
 		height:20px;
 	}
+
