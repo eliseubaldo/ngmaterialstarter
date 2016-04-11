@@ -15,6 +15,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "formCtrl",
         templateUrl: "app/views/formView.html"
     })
+    $stateProvider.state("text", {
+        url: "/text",
+        controller: "textCtrl",
+        templateUrl: "app/views/textstyleView.html"
+    })
   
 });
 
