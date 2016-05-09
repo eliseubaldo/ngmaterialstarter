@@ -41,20 +41,21 @@
 
 	    <md-input-container class="md-block">
 	      <label>Best Movie of all time</label>
-	      <input ng-model="user.movie" md-maxlength="12" required>
+	      <input ng-model="user.movie" md-maxlength="12" required >
 
-	      <div ng-messages="user.movie.$error" role="alert" multiple>
-              <div ng-message="required" class="my-message">Don't you have a favorite movie?</div>
+	      <div ng-messages="user.movie.$error" role="alert" >
+            <div ng-message="required" class="my-message">
+            	Don't you have a favorite movie?
+            </div>
               
-              <div ng-message="md-maxlength" class="my-message">
-                Movies with long names tend to be bad ones...
-              </div>
-           </div>
+            <div ng-message="md-maxlength" class="my-message">
+            	Movies with long names tend to be bad ones...
+            </div>
+          </div>
 
-	    </md-input-container>
-
-	    
+	    </md-input-container>	    
 	</div>
+
 
 	<div flex="30" layout-padding>
 		<h4>Checkbox</h4>

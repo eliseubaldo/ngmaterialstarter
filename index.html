@@ -51,29 +51,36 @@
 	        	<h1 class="md-toolbar-tools">Sidenav Left</h1> 
 	        	<md-button ng-click="toggleLeft('leftMenu')" aria-label="Close" class="" >Close</md-button>
 	      	</md-toolbar>
-	        <md-list flex>
+	        <md-list layout="column" >
 		        <!-- List item #1 -->
 		        <md-list-item>
-		            <md-button href="#home" aria-label="Home" class="" ng-click="toggleLeft('leftMenu')">Home
+		            <md-button flex="100" href="#home" aria-label="Home" class="" ng-click="toggleLeft('leftMenu')">Home
 			      </md-button>
 		        </md-list-item>
 
 		        <!-- List item #2 -->
 		        <md-list-item >
-		            <md-button href="#form" aria-label="Home" class="" ng-click="toggleLeft('leftMenu')">Materials
+		            <md-button flex="100" href="#form" aria-label="Home" class="" ng-click="toggleLeft('leftMenu')">Materials
 		        </md-list-item>
 	      	</md-list>
     	</md-sidenav>
 
 
 
-        <main>
+        <main flex>
         		<!-- Views -->
         		<div ui-view="">
         			
         		</div>
         	
         </main>
+
+        <!-- footer -->
+        <footer>
+        	<div layout="row" layout-padding layout-align="start center">
+        		<p>My footer</p>
+        	</div>        	
+        </footer>
 
 
     	
