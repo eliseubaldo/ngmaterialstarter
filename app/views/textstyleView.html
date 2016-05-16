@@ -11,7 +11,20 @@
 	<p>Regular Text</p>
 	<p>Text <a href="#">Link</a> to another page</p>
 
+	<md-button type="button" class="md-primary md-raised" ng-click="getthem()">Get items</md-button>
 
+
+
+	<md-list>
+	  <md-list-item class="md-2-line" ng-repeat="item in items">
+	    <md-checkbox ng-model="item.done"></md-checkbox>
+	    <div class="md-list-item-text">
+	      <h3>{{item.title}}</h3>
+	      <p>{{item.body}}</p>
+	    </div>
+	  </md-list-item>
+	</md-list>
+	
 
 
 </div>

@@ -12,7 +12,7 @@
 <body ng-app="starterApp" layout="column" ng-controller="appCtrl">
 
 	<!-- HEader  -->
-    	<header flex>
+    	<header flex="none">
     		
     		<md-toolbar layout="row" layout-padding>
     			<div class="md-toolbar-tools">
@@ -65,14 +65,14 @@
 
 		        <!-- List item #3 -->
 		        <md-list-item >
-		            <md-button flex="100"  href="#text" aria-label="Text" class="" ng-click="toggleLeft('leftMenu')">Text style
+		            <md-button flex="100" href="#text" aria-label="Text" class="" ng-click="toggleLeft('leftMenu')">Text style
 		        </md-list-item>
 	      	</md-list>
     	</md-sidenav>
 
 
 
-        <main flex>
+        <main flex="grow" layout-align="center start">
         		<!-- Views -->
         		<div ui-view="">
         			
@@ -80,8 +80,8 @@
         </main>
 
         <!-- footer -->
-        <footer>
-        	<div layout="row" layout-padding layout-align="start center">
+        <footer flex="nogrow" layout-align="center end">
+        	<div layout="row" layout-padding layout-align="center center">
         		<p>My footer</p>
         	</div>        	
         </footer>
